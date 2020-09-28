@@ -1,6 +1,9 @@
 1. Python is the programming language chosen.
-2. Create data into a folder called data for now.
-3. Do not push your local branch to Master branch.
+2. Files are saved in the MySql sever.
+3. Do not push your local branch to Master branch. 
+4. functions are saved in functions.py
+5. Any visualisation and/or data exploration is to be done using notebooks.
+
 
 create a new repository on the command line
 echo "# test" >> README.md
