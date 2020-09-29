@@ -4,18 +4,5 @@
 4. functions are saved in functions.py
 5. Any visualisation and/or data exploration is to be done using notebooks.
 
-
-create a new repository on the command line
-echo "# test" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M master
-git remote add origin https://github.com/MDSI-AUG-2020-DSP/ASX.git
-git push -u origin master
-              
-push an existing repository from the command line
-git remote add origin https://github.com/MDSI-AUG-2020-DSP/ASX.git
-git branch -M master
-git push -u origin master
-
+To install required libraries:
+	 pip install -r requirements.txt
