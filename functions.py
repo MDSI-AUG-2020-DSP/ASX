@@ -11,3 +11,12 @@ def connect_mysql(host, id, pwd, db = ""):
         return(mydb)
     except Exception as ex:
         print('Error Occured : ', ex)
+
+def mysql_list(myresult):
+    try:
+        db_list = [x[0].decode("utf8") for x in myresult]
+    except:
+        db_list = [x[0] for x in myresult]
+    finally:
+        return(db_list)
+        
