@@ -8,7 +8,7 @@ Programming language will be Python
 
 - Pandas
 - Numpy
-- CBon
+- Seaborn 
 - Matplot
 - package for time series packages
 
