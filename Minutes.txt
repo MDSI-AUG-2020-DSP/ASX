@@ -1,4 +1,4 @@
-Minutes from meeting 01 Oct 1630
+## Minutes from meeting 01 Oct 1630
 
 Question - Recessions and the market indicators and responses pre recession and post recession seeking to understand what sectors are more resilient to recession and why.
 
@@ -8,7 +8,7 @@ Programming language will be Python
 
 - Pandas
 - Numpy
-- Seaborn 
+- Seaborn
 - Matplot
 - package for time series packages
 
@@ -24,15 +24,40 @@ Step 2 - Build Database Structure and confirm update mechanism// clean data (5 D
 Step 3 - Run EDA focussed on recessions and market sectors (3 Days) 16 Oct
 
 ** Review processes and tasks to date with a view to allocate and plan future tasking.
-** Consider splitting into teams to finalise the
+** Consider splitting into teams to finalise the paper
 ** Draft individual reports around here also to ensure they are underway with lessons and insights
 
 Step 4 - Confirm the insight we are going to publish and the publishing mechanism to be used (Markdown etc) TBC
 Step 5 - Draft report for review and compile GITHUB insights TBC
-Step 6 - publish report for review 29 Nov 
+Step 6 - publish report for review 29 Nov
 Ongoing - review GITHUB every 7 Days and publish insights for use in individual and group reports// determine the best way to evaluate these indights??
 
 
 7 Day task - gather as much data as possible and get it into the database then we will determine the
 
 Next meeting will be in 7 Days time 08 Oct @ 1630 - Yun to co-ord the zoom meeting
+
+## Minutes from meeting  09 Oct 1600
+
+Points from last meeting:
+- RDS is coming along, there are several tables in the RDS and we are at the point that we can do some EDA on the data we have
+- GIT rules still remain outstanding, more to follow on this for the next meeting - James
+- RDS structure still needs attending to - James
+
+The insight we were looking for was discussed at length with a vote conducted which narrows the focus down to the ASX and the factors that affect it.
+
+The idea of the recession and looking into it in more detail was put to the side as it was considered to be too big of a task for this assignment.
+
+The following tasks were allocated
+- EDA on sectors and industries - Priya/ Yixia
+- EDA on GDP and the ASX and US markets and the ASX - James/ Min
+- EDA on House prices and the ASX and House Prices and GDP - Cynthia
+- EDA on cash rate and exchange rate with lending and borrowing rates - Yun
+
+Each team is to create a branch, labelling it the specific aspect for the project, from the Master.
+
+Several group members have presentations and papers due over the coming week so the decision was made to delay the next meeting until 18th Oct 4pm
+
+Admin - all coding is to be done in Jupyter notebooks and loaded into the repository in the relevant branch
+
+Next meeting is for Sunday 18th Oct 4pm
