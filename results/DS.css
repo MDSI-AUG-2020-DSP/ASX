@@ -1,0 +1,290 @@
+/*!
+ * Writ v1.0.4
+ *
+ * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
+ *
+ * https://cmcenroe.me/writ/LICENSE (ISC)
+ */
+
+/* Fonts, sizes & vertical rhythm */
+
+html {
+  font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+code, pre, samp, kbd {
+  font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 0.833rem;
+}
+
+kbd { font-weight: bold; }
+h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+
+/* Minor third */
+h1 { font-size: 2.488em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+small { font-size: 0.833em; }
+
+h1, h2, h3 { line-height: 3rem; }
+
+p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+  margin: 1.5rem 0 0;
+}
+ul ul, ol ol, ul ol, ol ul { margin: 0; }
+
+hr {
+  margin: 0;
+  border: none;
+  padding: 1.5rem 0 0;
+}
+
+/* Accounting for borders */
+table {
+  line-height: calc(1.5rem - 1px);
+  margin-bottom: -1px;
+}
+pre {
+  margin-top: calc(1.5rem - 1px);
+  margin-bottom: -1px;
+}
+
+/* Colors */
+
+body { color: #222; }
+code, pre, samp, kbd { color: #111; }
+a, header nav a:visited, a code { color: black; }
+a:visited, a:visited code {
+  color: black;
+  text-decoration: underline;
+  text-decoration-style: double;}
+mark { color: inherit; }
+
+code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
+mark { background-color: #fe0; }
+
+main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+th, td { border: solid #dbdbdb; }
+
+/* Layout */
+
+body { margin: 1.5rem 1ch; }
+
+body > header { text-align: center; }
+
+main, body > footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  margin-top: 2px;
+  display: block; /* Just in case */
+  width: 100%;
+  text-align: center;
+  padding-top: 3px;
+  filter:opacity(40%);
+}
+
+main figure, main aside {
+  float: right;
+  margin: 1.5rem 0 0 1ch;
+}
+
+main aside {
+  max-width: 26ch;
+  border-width: 0 0 0 0.5ch;
+  padding: 0 0 0 0.5ch;
+}
+
+/* Copy blocks */
+
+blockquote {
+  margin-right: 3ch;
+  margin-left: 1.5ch;
+  border-width: 0 0 0 0.5ch;
+  padding: 0 0 0 1ch;
+}
+
+pre {
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 0 0.5ch;
+  overflow-x: auto;
+}
+pre code {
+  border: none;
+  padding: 1;
+  background-color: transparent;
+  white-space: inherit;
+}
+
+img {
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  }
+
+/* Lists */
+
+ul, ol, dd { padding: 0 0 0 3ch; }
+dd { margin: 0; }
+
+ul > li { list-style-type: disc; }
+li ul > li { list-style-type: circle; }
+li li ul > li { list-style-type: square; }
+
+ol > li { list-style-type: decimal; }
+li ol > li { list-style-type: lower-roman; }
+li li ol > li { list-style-type: lower-alpha; }
+
+
+/* Nav bar and background content for header*/
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .01em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1.15em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(220, 120, 0);
+}
+
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgb(50, 50, 50);
+  transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+  top: -100%;
+  opacity: 0;
+}
+
+.bg-visible {
+  top: 0;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  font-family: Ubuntu;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  background: rgb(50, 50, 50);
+  background: url(https://www.fool.com.au/wp-content/uploads/2020/04/Recession-16.9.jpg) no-repeat 50% 50% fixed;
+  background-size: 130%;
+  overflow: hidden;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: .3em;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: 3000px;
+  padding: 1em 10%;
+}
+
+.content-wrapper h1 {
+  margin: 0;
+  color: rgb(220, 120, 0);
+}
+
+.content-wrapper p {
+  font-family: "Open Sans";
+  text-indent: 1.5em;
+}
+
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+th, td {
+  border-width: 1px;
+  padding: 0 0.5ch;
+}
+
+/* Copy inline */
+
+a { text-decoration: none; }
+
+sup, sub {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+ins {
+  border-width: 1px;
+  padding: 1px;
+  text-decoration: none;
+}
+
+mark {
+  padding: 1px;
+}
+
+code, samp {
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 0.1em 0.2em;
+  white-space: nowrap;
+}
