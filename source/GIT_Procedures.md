@@ -8,11 +8,16 @@ The following page is a cheat sheet taken from [Atlasian](https://www.atlassian.
 
 In addition, this [link](http://marklodato.github.io/visual-git-guide/index-en.html) is an excellent reference for what is happening when the commands are executed. These two documents form the basis of the workflow that will be employed.
 
+## GIT Policies Implemented for the group
+
 Some rules for the following items:
-Master
+
+### Master
   - the master branch is managed by one person.
-  - Three folders are created on the master:
-    - Data collection and base management
-    - Data Analysis and production
-    - Publication of the results
-  - Branches are created in one of these folders to with the ultimate goal to have a single file that forms the basis of the data pipeline across each of the elements required to enable the complete data-pipeline from collection through to publication of results.
+  - Folders are created on the master and they are directly relatable to the project and an aspect of the complete pipeline - example folder are below:
+    - Data collection and Database management
+    - Data Analysis and insight gathering
+    - Publication of the results to production
+
+### Branch Policy
+    - Branches are to be made close to the 'Trunk' where fixes and features are built then integrated quickly back to the master. Ideally
