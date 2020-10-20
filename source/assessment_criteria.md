@@ -27,7 +27,7 @@ Both R and Python are Objective languages in the way they process Data, this mea
 
 ### Graphics and Visualisations
 
-R has got is on Python in this instance. The visualisations possible with R are of a higher quality generally than those from Python for a similar amount of code. In saying this, Python still offers a significant number of options and the graphics produced are of production quality. If the product was to be progressed further the use of Plotly could be integrated to ensure the visualisations were interactive and more user friendly. 
+R has got is on Python in this instance. The visualisations possible with R are of a higher quality generally than those from Python for a similar amount of code. In saying this, Python still offers a significant number of options and the graphics produced are of production quality. If the product was to be progressed further the use of Plotly could be integrated to ensure the visualisations were interactive and more user friendly.
 
 ### Deployability and Maintainability
 
