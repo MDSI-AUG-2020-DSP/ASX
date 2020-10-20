@@ -1,10 +1,11 @@
 Group Members details
 
-Priya Ramakrishnan 12750016
-Yunseok Oh 10782946
-Min Zhu 12456810
-Yixin Zhang 13786734
 James Murray 13879046
+Min Zhu 12456810
+Priya Ramakrishnan 12750016
+Yixin Zhang 13786734
+Yuanyuan Zhao 13285325
+Yunseok Oh 10782946
 
 
 ## Minutes from meeting 01 Oct 1630
