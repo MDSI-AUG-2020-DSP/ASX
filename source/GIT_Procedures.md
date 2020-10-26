@@ -20,21 +20,21 @@ Some rules for the following items:
     - Publication of the results to production
 
 ### Branch Policy
-    - Branches are to be made close to the 'Trunk' where fixes and features are built then integrated quickly back to the master.
-    - Branches are to be names in accordance with the following conventions:
-      - /name/description
-    - Once a feature or change had been integrated back into the master the branch is to be pruned.
-    - Ideally, a branch is *grown* for a single feature or change - the change is integrated back into the master and the branch is pruned. This will allow the master to be the single source of truth that can go into production at any time.
+
+  - Branches are to be made close to the 'Trunk' where fixes and features are built then integrated quickly back to the master.
+  - Branches are to be names in accordance with the following conventions:
+    - /description/name
+  - Once a feature or change had been integrated back into the master the branch is to be pruned.
+  - Ideally, a branch is *grown* for a single feature or change - the change is integrated back into the master and the branch is pruned. This will allow the master to be the single source of truth that can go into production at any time.
 
 ### Commit Messages
-    - All commit messages are to have the following format
-        -m 'THIS THING WAS CHANGED OR FIXED
-
-            This is a more detailed description of what has been changed or fixed and why'
+  - All commit messages are to have the following format
+    - -m 'THIS THING WAS CHANGED OR FIXED
+      - This is a more detailed description of what has been changed or fixed and why'
 
 ### Pull Requests
-    - All pull requests are to be in accordance with the template in the repository. The template has the following format
-      - Issue - what was wrong/ what needed changing
-      - Solution - what was done to fix the solution
-      - An image of before and after if applicable
-      - The way this can be tested before putting it back into production on the **Master** branch.
+  - All pull requests are to be in accordance with the template in the repository. The template has the following format
+    - Issue - what was wrong/ what needed changing
+    - Solution - what was done to fix the solution
+    - An image of before and after if applicable
+    - The way this can be tested before putting it back into production on the **Master** branch.
